@@ -1,0 +1,10 @@
+{
+    "allProjects":[
+        {"title":"E-newspaper", "description":"E-newspaper web site", "category":"html & css", "image":"/newspaper.webp"},
+        {"title":"pharmacy", "description":"pharmacy web site", "category":"javaScript", "image":"/pharmacy.jpeg"},
+        {"title":"learnProgramming", "description":"learnProgramming web site", "category":"reacte & MUI", "image":"/learnProgramming.webp"},
+        {"title":"design", "description":"design web site", "category":"node & express", "image":"/design.webp"},
+        {"title":"shopping", "description":"shopping web site", "category":"reacte & MUI", "image":"/shopping.webp"},
+        {"title":"chatLove", "description":"chatLove web site", "category":"javaScript", "image":"/chatLove.jpeg"}
+    ]
+}

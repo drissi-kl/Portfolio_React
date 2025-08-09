@@ -1,0 +1,114 @@
+/*
+==========================
+table of content
+==========================
+1 - hero 
+2 - left-section 
+    2.1 - parent-avatar
+        2.1.1 - avatar (presonal image)
+        2.1.2 - icon verified
+
+
+
+3 - right-section (animation) 
+
+*/
+
+
+/* 1 - hero  */
+.hero{
+    display: flex;
+    margin-top: 2rem;
+}
+
+/* 2 - left-section */
+.hero .left-section{
+    flex-grow: 5;
+    padding:20px;
+    
+}
+
+/* 2.1 - parent-avatar */
+.hero .parent-avatar{
+    display: flex ;
+    gap:10px;
+    align-items: end;
+}
+
+/* 2.1.1 - avatar (presonal image) */
+.avatar{
+    height: 88px;
+    border: 1px var(--blue) solid;
+    border-radius: 50%;
+    padding: 1px;
+    box-shadow: 0px 0px 10px var(--blue) inset;
+    
+}
+
+/* 2.1.2 - icon verified */
+.bx-user-check{
+    
+    font-size: 22px;
+    color: var(--blue);
+}
+
+.hero h1.title{
+    color:var(--title);
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 1.5rem 0;
+}
+
+.hero p.subtitle{
+    color:var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-bottom: 3rem ;
+}
+
+.hero div.icons{
+    display: flex;
+    gap:10px ;
+}
+
+.icon{
+    font-size: 30px;
+    color:var(--subtitle);
+    transition:0.3s;
+}
+
+.icon:hover{
+    scale:1.2;
+    color:var(--title);
+    filter: drop-shadow(0px 0px 6px var(--icon-hover));
+    cursor: pointer;
+}
+
+
+.developeranimation{
+    height: 500px;
+}
+
+
+
+
+.hero .right-section{
+    /* border: 1px solid red; */
+}
+
+
+
+@media (max-width:900px){
+    .hero .animation{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    display: flex;
+    /* justify-content: space-between; */
+    gap:10px;
+}
+
+footer ul li{
+
+}
+
+footer ul li a{
+    color:var(--subtitle);
+    transition: 0.4s;
+    scale: 1;
+}
+
+footer ul li a:hover{
+    color:var(--blue);
+    font-weight: 500;
+}
+
+footer p{
+    color:var(--title);
+
+}
+
+
+@media (max-width:700px){
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+

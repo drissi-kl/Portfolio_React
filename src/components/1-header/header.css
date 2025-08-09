@@ -1,0 +1,149 @@
+/*
+==========================
+table of content
+==========================
+1 - header 
+2 - nav 
+3 - mode and menu style button 
+4 - pop up 
+5 - close button style
+6 - media for control block and hidden of menu button and nav bar
+*/
+
+
+
+/* 1 - header  */
+header {
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+/* 2 - nav  */
+header nav {
+    background-color: var(--bgHeader);
+    padding: 0.8rem 1.5rem;
+    border-radius: 45px;
+    box-shadow: 0px 0px 10px rgb(63, 63, 63);
+}
+
+header nav ul {
+    gap: 15px
+}
+
+header nav ul li a {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+header  ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+/* 3 - mode, menu and close style button */
+header .menu {
+    display: none;
+}
+
+header .bx-moon, header .bx-sun, header .bx-menu-wider{
+    display: flex; justify-content: center; align-items:center;
+    background-color: var(--bgHeader) ;
+    height: 40px; width: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    border: 1px solid rgba(250, 128, 114, 0.562);
+    transition: 0.4s;
+}
+header .bx-moon:hover, header .bx-sun:hover, header .bx-menu-wider:hover{
+    border: 1px solid rgba(250, 128, 114, 1);
+    color:var(--title);
+}
+
+
+
+
+/* 4 - pop up */
+header .popup {
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(40, 40, 48, .91);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    /* for text */
+    /* filter:blur(8px);  */  
+
+    /* for background */
+    backdrop-filter: blur(8px);
+}
+
+header .popup ul {
+    background-color: var(--primary);
+    width: 85%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    animation: popup 0.4s ;    
+}
+
+@keyframes popup{
+    from { scale : 0 }
+    to { scale : 1}
+}
+
+
+
+header .popup ul li{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.8rem;
+    padding-top: 0.7rem;
+}
+
+header .popup ul li:first-child{
+    text-align: right;
+    padding-bottom: 0rem;
+    padding-top: 0.2rem;
+    border:none;
+}
+
+header .popup ul li:last-child{
+    border:none;
+}
+
+header ul li a{
+    color:var(--title)
+}
+
+/* 5 - close button style */
+.bx-x{
+ color: var(--title);
+ font-size: 1.4rem;
+ transition: 1s;   
+}
+.bx-x:hover{
+ color: crimson;
+ font-size: 1.4rem;
+ scale:1.3;
+ rotate:180deg;
+}
+
+
+/* 6 - media for control block and hidden of menu button and nav bar */
+@media (max-width:640px) {
+    header nav {
+        display: none;
+    }
+
+    header .menu {
+        display: block;
+    }
+}

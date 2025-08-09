@@ -1,0 +1,141 @@
+main{
+    display: flex;
+    gap:1rem;
+    
+}
+
+
+main .left-section{
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+
+main .left-section button{
+    background-color: rgb(36, 37, 46);
+    padding: 0.75rem 0;
+    width: 11rem;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: capitalize;
+    opacity: .5;
+    transition: .4s;
+    color: #fff;
+}
+
+main .left-section button.active{
+    opacity: 1;
+    border: var(--blue) 1px solid;
+}
+
+.light main .left-section button.active{
+    opacity: 1;
+    border: none;
+    color: #fff;
+}
+
+main .left-section button:hover{
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+
+
+main .right-section{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+
+main .right-section .card{
+    width: 266px;
+    border: 1px solid rgb(93, 188, 252, 0.3); 
+    border-radius: 5px;   
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+main .right-section .card:hover{
+    border: 1px solid var(--blue); 
+    cursor: pointer;
+    /* rotate: 10deg; */
+    transform:rotateZ(-1deg) ;
+    box-shadow: 0px 0px 5px var(--blue);
+
+    scale: 1.01;
+    /* box-shadow: ; */
+}
+
+main .right-section .card img{
+    width: 100%;
+}
+
+main .right-section .card .box{
+    padding: 1rem 0.4rem;
+}
+
+main .right-section .card .box .title{
+    color:var(--title);
+    margin-bottom: 1rem;
+    /* font-size:25px; */
+}
+
+main .right-section .card .box .subtitle{
+    color:var(--subtitle);
+    margin-bottom: 1rem;
+    font-size:12px;
+    line-height: 18px;
+}
+
+main .right-section .card .icons{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .right-section .card .left-icons{
+    display: flex; 
+    gap:10px
+}
+
+main .right-section .card .right-icons{
+    display: flex; 
+    color:var(--blue)
+}
+
+
+
+
+
+
+@media (max-width:510px){
+    main{
+        flex-direction:column;
+    }
+
+    main .left-section{
+        flex-direction: row ;
+        flex-wrap: wrap;
+        justify-content: center;
+   
+    }
+
+    main .left-section button{
+        width: 9rem;
+        flex-grow: 2;
+    }
+}
+
+
+
+
+
+
+
+
+
